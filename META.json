@@ -16,7 +16,10 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : "0"
+            "File::Slurp" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0",
+            "Test::XML" : "0"
          }
       },
       "configure" : {
@@ -37,7 +40,7 @@
    "provides" : {
       "TAP::Formatter::Bamboo" : {
          "file" : "lib/TAP/Formatter/Bamboo.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       },
       "TAP::Formatter::Bamboo::Session" : {
          "file" : "lib/TAP/Formatter/Bamboo/Session.pm",
@@ -50,5 +53,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

@@ -3,7 +3,10 @@ abstract: "Harness output delegate for Atlassian's Bamboo CI server"
 author:
   - 'Piotr PiÄtkowski <pp@idea7.pl>'
 build_requires:
+  File::Slurp: 0
+  File::Temp: 0
   Test::More: 0
+  Test::XML: 0
 configure_requires:
   Module::Build: 0
 dynamic_config: 1
@@ -16,7 +19,7 @@ name: TAP-Formatter-Bamboo
 provides:
   TAP::Formatter::Bamboo:
     file: lib/TAP/Formatter/Bamboo.pm
-    version: 0.02
+    version: 0.03
   TAP::Formatter::Bamboo::Session:
     file: lib/TAP/Formatter/Bamboo/Session.pm
     version: 0
@@ -28,4 +31,4 @@ requires:
   XML::LibXML: 2
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
